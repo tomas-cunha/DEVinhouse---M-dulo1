@@ -46,9 +46,17 @@ main {
     padding: 3% 5%;
 }
 
+section {
+    margin-bottom: 3em;
+}
+
 .title {
     display: flex;
     align-items: center;
+}
+
+.title img {
+    margin-right: 1em;
 }
 
 .nav {
@@ -125,6 +133,7 @@ main {
 
 .card-info .container-date .text-orange {
     color: rgb(226, 147, 44);
+    font-weight: bold;
 }
 
 .container-date {
@@ -148,4 +157,45 @@ main {
 
 .card-info-footer button:hover {
     background-color: #f2f3f4;
+}
+
+/* lista dos eventos*/
+
+.list-events {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+    gap: 20px;
+}
+
+.list-events .card {
+    width: 30%;
+    flex-direction: column;
+}
+
+.list-events img {
+    border-radius: 1em 1em 0 0;
+}
+
+.list-events h2 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* configuração mobile */
+
+@media screen and (max-width: 768px) {
+
+    .list-events {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .list-events .card {
+        width: 100%;
+    }
+
+
 }
