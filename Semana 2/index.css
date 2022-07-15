@@ -184,6 +184,87 @@ section {
     text-overflow: ellipsis;
 }
 
+/* sobre nós*/
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 12px 12px 0 0;
+    background-color: #ce9b2c;
+}
+
+.about p,
+.believe p,
+.want p {
+    font-size: 0.8em;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.believe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #ce9b2cab;
+}
+
+.want {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 0 0 12px 12px;
+    background-color: #d1930c;
+}
+
+/* formulario de contato */
+
+.form-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    gap: 20px;
+}
+
+.input-form,
+.textarea-form {
+    display: flex;
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: 0.5px solid #909497;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.textarea-form:focus,
+.input-form:focus {
+    outline: none;
+}
+
+.form-button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button-send {
+    border: 1px solid #17202a;
+    background-color: #ce9b2cab;
+    color: white;
+}
+
+.button-send:hover {
+    background-color: #d1930c;
+}
+
+
 /* configuração mobile */
 
 @media screen and (max-width: 768px) {
