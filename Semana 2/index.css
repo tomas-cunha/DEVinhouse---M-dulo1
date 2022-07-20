@@ -46,6 +46,19 @@ main {
     padding: 3% 5%;
 }
 
+footer {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    font-size: 0.8em;
+    color: black;
+}
+
 section {
     margin-bottom: 3em;
 }
@@ -264,6 +277,14 @@ section {
     background-color: #d1930c;
 }
 
+
+/*footer*/
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
 
 /* configuração mobile */
 
