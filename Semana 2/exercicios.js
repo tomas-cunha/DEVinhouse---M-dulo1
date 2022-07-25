@@ -17,3 +17,10 @@ function decrementa() {
     valor--;
     result.innerText = valor;
 }
+
+function altera() {
+    var titulo = document.getElementById('titulo');
+    var novotitulo = document.getElementById('novotitulo').value;
+
+    titulo.innerText = novotitulo;
+}
