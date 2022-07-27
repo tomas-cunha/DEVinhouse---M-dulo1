@@ -28,3 +28,20 @@ listaConvidados.forEach((pessoa) => {
     itemLista.textContent = `${pessoa.nome} ${pessoa.sobrenome}`;
     listaEl.appendChild(itemLista);
 })
+
+//exercicio03
+let num1 = parseInt(window.prompt('Informe o primeiro número:'))
+let num2 = parseInt(window.prompt('Informe o segundo número:'))
+let operação = window.prompt('Informe a operação que quer realizar:')
+
+if (operação === '+') {
+    alert(num1 + num2);
+} else if (operação === '-') {
+    alert(num1 - num2);
+} else if (operação === '*') {
+    alert(num1 * num2);
+} else if (operação === '/') {
+    alert(num1 / num2);
+} else {
+    alert('Operação não é válida')
+}
