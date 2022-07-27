@@ -1,3 +1,4 @@
+//exercicio04
 const convidado1 = {
     nome: 'Tomás',
     sobrenome: 'Cunha',
@@ -39,3 +40,14 @@ const convidado6 = {
     setor: 'arquibancada',
     idade: 30,
 };
+
+//exercicio05
+
+let listaDeConvidados = [
+    convidado1,
+    convidado2,
+    convidado3,
+    convidado4,
+    convidado5,
+    convidado6,
+]
