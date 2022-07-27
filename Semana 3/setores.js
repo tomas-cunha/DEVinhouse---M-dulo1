@@ -50,4 +50,22 @@ let listaDeConvidados = [
     convidado4,
     convidado5,
     convidado6,
-]
+];
+
+//exercicio06
+
+function liberarBebidas(lista) {
+    var listaAtualizada = [];
+    for (i = 0; i < lista.length; i++) {
+        var convidado = lista[i];
+        if (convidado.idade >= 18) {
+            convidado.openBar = true;
+        } else {
+            convidado.openBar = false;
+        }
+        listaAtualizada.push(convidado);
+    }
+    return listaAtualizada;
+};
+
+const convidadosComBebidasProcessada = liberarBebidas(listaDeConvidados);
