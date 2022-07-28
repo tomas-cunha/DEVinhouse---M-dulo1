@@ -69,3 +69,24 @@ function liberarBebidas(lista) {
 };
 
 const convidadosComBebidasProcessada = liberarBebidas(listaDeConvidados);
+
+//exercicio07
+
+function separarCamarote(array) {
+    return array.filter((pessoa) => pessoa.setor === "camarote");
+};
+
+let listaCamarote = separarCamarote(convidadosComBebidasProcessada);
+
+function separarPista(array) {
+    return listaFiltrada = array.filter((pessoa) => pessoa.setor === "pista");
+};
+
+let listaPista = separarPista(convidadosComBebidasProcessada)
+
+function separarArquibancada(array) {
+    return listaFiltrada = array.filter((pessoa) => pessoa.setor === "arquibancada");
+};
+
+let listaArquibancada = separarArquibancada(convidadosComBebidasProcessada);
+
