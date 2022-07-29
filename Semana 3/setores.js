@@ -90,3 +90,34 @@ function separarArquibancada(array) {
 
 let listaArquibancada = separarArquibancada(convidadosComBebidasProcessada);
 
+//exercicio08
+
+let listaCamaroteEl = document.getElementById('listaCamarote');
+let listaArquibancadaEl = document.getElementById('listaArquibancada');
+let listaPistaEl = document.getElementById('listaPista');
+
+// listaCamarote.forEach((c) => {
+//     var item = document.createElement('li');
+//     item.textContent = `${c.nome} ${c.sobrenome}`;
+//     listaCamaroteEl.appendChild(item)
+// })
+
+const montaNome = (objPessoa) => {
+    return `${objPessoa.nome} ${objPessoa.sobrenome}`;
+};
+
+const marcarOpenbar = (convidado) => {
+    return convidado.openBar ? "🍹" : " "
+}
+
+listaCamarote.forEach((convidado) => {
+    listaCamaroteEl.innerHTML += `<li>${montaNome(convidado)} ${marcarOpenbar(convidado)}</li>`;
+})
+
+listaArquibancada.forEach((convidado) => {
+    listaArquibancadaEl.innerHTML += `<li>${montaNome(convidado)} ${marcarOpenbar(convidado)}</li>`;
+})
+
+listaPista.forEach((convidado) => {
+    listaPistaEl.innerHTML += `<li>${montaNome(convidado)} ${marcarOpenbar(convidado)}</li>`;
+})
