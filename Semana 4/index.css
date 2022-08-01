@@ -25,3 +25,33 @@ form {
 .formGroup {
     margin-right: 3%;
 }
+
+.field {
+    padding: 5px;
+    border-radius: 5px;
+    min-width: 150px;
+}
+
+.button-confirm {
+    padding: 8px;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(2, 48, 2);
+    border-radius: 5px;
+    color: black;
+    text-transform: uppercase;
+}
+
+.button-confirm:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+.error {
+    color: red;
+}
+
+.success {
+    color: green;
+}

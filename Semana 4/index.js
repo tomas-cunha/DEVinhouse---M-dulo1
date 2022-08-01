@@ -1,4 +1,4 @@
-const contasClientes = [
+let contasClientes = [
     {
         id: 1,
         nome: 'Cliente 01',
@@ -17,12 +17,15 @@ const contasClientes = [
 ];
 
 const contas = document.getElementById('conta');
+const strongMensagem = document.getElementById('mensagem');
+const form = document.getElementById('form');
 const body = document.body;
 
 const adicionaOpcao = (value, text) => {
     const option = document.createElement('option');
     option.value = value;
     option.textContent = text;
+    option.id = value;
     contas.appendChild(option)
 };
 
@@ -37,3 +40,60 @@ const populaSelect = () => {
 };
 
 body.onload = populaSelect;
+
+const exibeMensagem = (mensagem, type = 'error') => {
+    strongMensagem.textContent = mensagem;
+
+    strongMensagem.className = type === 'error' ? 'error' : 'success';
+};
+
+const validaValor = (valor) => {
+    if (isNaN(valor) || valor <= 0) {
+        exibeMensagem('Valor inválido');
+        return false;
+    }
+    return true;
+}
+
+const atualizaSaldo = (contaAtual, saldo) => {
+    const contasSemContaAtual = contasClientes.filter((c) => c.id !== contaAtual.id);
+    const contasAtualizadas = [...contasSemContaAtual, { ...contaAtual, saldo }];
+    contasClientes = contasAtualizadas;
+}
+
+const sacar = (contaAtual, valor) => {
+    if (!validaValor(valor)) {
+        return;
+    }
+
+    if (valor > contaAtual.saldo) {
+        exibeMensagem(`Saldo insuficiente. Saldo atual: ${contaAtual.saldo}`);
+        return;
+    }
+
+    const novoSaldo = contaAtual.saldo - valor;
+
+    atualizaSaldo(contaAtual, novoSaldo);
+
+    exibeMensagem(`Saque efetuado com sucesso! Saldo atual: ${novoSaldo}`, 'success')
+}
+
+const depositar = (contaAtual, valor) => {
+    if (!validaValor(valor)) {
+        return;
+    }
+
+    const novoSaldo = contaAtual.saldo + valor;
+
+    atualizaSaldo(contaAtual, novoSaldo);
+
+    exibeMensagem(`Depósito efetuado com sucesso! Saldo atual: ${novoSaldo}`, 'success')
+}
+
+const operacoes = (event) => {
+    event.preventDefault();
+
+    sacar(contasClientes[0], 200)
+}
+
+form.onsubmit = operacoes;
