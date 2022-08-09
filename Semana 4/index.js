@@ -3,16 +3,19 @@ let contasClientes = [
         id: 1,
         nome: 'Cliente 01',
         saldo: 500,
+        senha: '1111'
     },
     {
         id: 2,
         nome: 'Cliente 02',
         saldo: 3000,
+        senha: '2222'
     },
     {
         id: 3,
         nome: 'Cliente 03',
         saldo: 5000,
+        senha: '1234'
     },
 ];
 
@@ -97,6 +100,7 @@ const operacoes = (event) => {
     const contaId = parseInt(event.target.conta.value);
     const valor = parseFloat(event.target.valor.value);
     const operacao = parseInt(event.target.operacao.value);
+    const senha = event.target.senha.value;
 
     if (!validaValor(contaId) || !validaValor(valor) || !validaValor(operacao)) {
         return;
@@ -105,6 +109,17 @@ const operacoes = (event) => {
     const contaAtual = contasClientes.find((conta) => conta.id === contaId);
     if (!contaAtual) {
         exibeMensagem('Conta inválida!');
+    }
+
+    if (!senha) {
+        exibeMensagem('Informe a senha!');
+        return;
+    }
+
+    if (senha !== contaAtual.senha) {
+        event.target.senha.value = ''
+        exibeMensagem('Senha incorreta!');
+        return;
     }
 
     switch (operacao) {
