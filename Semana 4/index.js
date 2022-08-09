@@ -21,6 +21,7 @@ const strongMensagem = document.getElementById('mensagem');
 const form = document.getElementById('form');
 const body = document.body;
 
+
 const adicionaOpcao = (value, text) => {
     const option = document.createElement('option');
     option.value = value;
@@ -93,7 +94,32 @@ const depositar = (contaAtual, valor) => {
 const operacoes = (event) => {
     event.preventDefault();
 
-    sacar(contasClientes[0], 200)
+    const contaId = parseInt(event.target.conta.value);
+    const valor = parseFloat(event.target.valor.value);
+    const operacao = parseInt(event.target.operacao.value);
+
+    if (!validaValor(contaId) || !validaValor(valor) || !validaValor(operacao)) {
+        return;
+    }
+
+    const contaAtual = contasClientes.find((conta) => conta.id === contaId);
+    if (!contaAtual) {
+        exibeMensagem('Conta inválida!');
+    }
+
+    switch (operacao) {
+        case 1:
+            sacar(contaAtual, valor)
+            break;
+        case 2:
+            depositar(contaAtual, valor)
+            break;
+        default:
+            exibeMensagem('Operação inválida!')
+    }
+
+    console.log(contasClientes)
+    // sacar(contasClientes[0], 200)
 }
 
 form.onsubmit = operacoes;
