@@ -10,3 +10,19 @@ main {
 h2 {
     text-align: center;
 }
+
+.container-estacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    padding: 3%;
+    width: 100%;
+    /* background-color: bisque; */
+    border: 1px solid black;
+}
+
+#data {
+    height: 8%;
+
+}
