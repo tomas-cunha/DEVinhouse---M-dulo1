@@ -44,6 +44,12 @@ class Pedido {
         if (produto instanceof Produto) {
             this.listaProdutos.push(produto);
         }
+    };
+
+    calcularTotal() {
+        let total = 0;
+        this.listaProdutos.forEach((p) => total += p.preco * p.quantidade);
+        return total;
     }
 }
 
