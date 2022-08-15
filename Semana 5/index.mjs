@@ -5,8 +5,6 @@ import saudacaoEspecial from "./saudacaoespecial.mjs";
 document.querySelector('body').onload = alert(saudacao());
 document.querySelector('body').onload = alert(saudacaoEspecial('Tomás'));
 
-//exercício 03
-
 class Produto {
     nome;
     preco;
@@ -19,11 +17,7 @@ class Produto {
         this.emEstoque = emEstoque;
         this.quantidade = quantidade;
     }
-}
-
-const shampoo = new Produto('pantene', 100, 5000, 2);
-
-console.log(shampoo);
+};
 
 class Pedido {
     numeroPedido;
@@ -52,4 +46,22 @@ class Pedido {
         return total;
     }
 }
+
+
+const prod1 = new Produto('Smirnoff', 30, true, 50);
+const prod2 = new Produto('Orloff', 20, true, 30);
+const prod3 = new Produto('Natasha', 15, true, 20);
+const prod4 = new Produto('Absolut', 70, true, 20);
+const prod5 = new Produto('Balalaika', 12, true, 40);
+
+const pedido1 = new Pedido("20220001", 'Tomás');
+const pedido2 = new Pedido("20220002", 'Paula');
+
+pedido1.adicionaProduto(prod1);
+pedido1.adicionaProduto(prod2);
+pedido1.adicionaProduto(prod5);
+
+pedido2.adicionaProduto(prod3);
+pedido2.adicionaProduto(prod4);
+
 
