@@ -25,3 +25,19 @@ const shampoo = new Produto('pantene', 100, 5000, 2);
 
 console.log(shampoo);
 
+class Pedido {
+    numeroPedido;
+    dataPedido;
+    estaPago;
+    listaProdutos;
+    nomeCliente;
+
+    constructor(numeroPedido, nomeCliente) {
+        this.numeroPedido = numeroPedido;
+        this.nomeCliente = nomeCliente;
+        this.dataPedido = new Date().toLocaleDateString();
+        this.estaPago = false;
+        this.listaProdutos = [];
+    }
+}
+
