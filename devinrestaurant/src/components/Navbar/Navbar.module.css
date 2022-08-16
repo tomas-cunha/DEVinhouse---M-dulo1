@@ -1,0 +1,39 @@
+.header {
+    width: 100%;
+    padding: 12px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.container {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.decor {
+    width: 12%;
+    border-bottom: 1px solid black;
+}
+
+.logo {
+    width: 60px;
+}
+
+.menu {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    padding: 5px 18px;
+    border-radius: 16px;
+    background-color: black;
+}
+
+.menu:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
