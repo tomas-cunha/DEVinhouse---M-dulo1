@@ -1,19 +1,16 @@
 
 import './App.css'
-import { Card } from './components/Card/Card'
 import { Footer } from './components/Footer/Footer'
 import { Navbar } from './components/Navbar/Navbar'
-
+import { Secao } from './components/Seção/Secao'
+import produtos from '../produtos.json'
 
 function App() {
 
   return (
     <div className="App">
       <Navbar />
-      <main className='main'>
-        <Card nome='Lasanha' imagem='/lasanha.jpg' descricao='Deliciosa lasanha a bolonhesa' preco={60} tempo={30} />
-
-      </main>
+      <Secao titulo='Pratos principais' array={produtos.entradas} />
       <Footer />
     </div>
   )

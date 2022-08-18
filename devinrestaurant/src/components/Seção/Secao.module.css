@@ -1,0 +1,9 @@
+.titulo {
+    text-align: center;
+}
+
+.ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 35px;
+}

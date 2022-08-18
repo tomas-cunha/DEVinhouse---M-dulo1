@@ -1,0 +1,25 @@
+{
+    "entradas": [
+        {
+            "nome": "Lasanha",
+            "imagem": "/lasanha.jpg",
+            "descricao": "Deliciosa lasanha à bolonhesa, feita conforme a tradicional receita italiana",
+            "preco": 55,
+            "tempo": 30
+        },
+        {
+            "nome": "Spaghetti",
+            "imagem": "/spaghetti.jpg",
+            "descricao": "Spaghetti artesanal acompanhado do famoso molho de tomate DEV",
+            "preco": 40,
+            "tempo": 15
+        },
+        {
+            "nome": "Filé Mignon",
+            "imagem": "/file.jpg",
+            "descricao": "Filé mignon frito na manteiga com molho especial. Acompanha legumes frescos",
+            "preco": 60,
+            "tempo": 10
+        }
+    ]
+}
