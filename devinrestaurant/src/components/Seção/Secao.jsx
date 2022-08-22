@@ -4,7 +4,7 @@ import PropType from 'prop-types';
 
 export const Secao = ({ titulo, array }) => {
     return (
-        <section>
+        <section className={styles.section}>
             <h2 className={styles.titulo}>{titulo}</h2>
             <ul className={styles.ul}>
                 {array.map((p, idx) => (
