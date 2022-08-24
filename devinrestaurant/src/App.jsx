@@ -12,9 +12,9 @@ function App() {
       <Navbar />
       <Secao titulo='Entradas' itens={produtos.entradas} />
       <Secao titulo='Saladas' itens={produtos.saladas} />
-      <Secao titulo='Pratos Principais' itens={produtos.pratos} subsecao={['Massas', 'Carnes']} />
+      <Secao titulo='Pratos Principais' itens={produtos.pratos} subsecao={['Carnes vermelhas', 'Aves', 'Peixes e frutos do mar', 'Massas', 'Risotos']} />
       <Secao titulo='Sobremesas' itens={produtos.sobremesas} />
-      <Secao titulo='Bebidas' itens={produtos.bebidas} />
+      <Secao titulo='Bebidas' itens={produtos.bebidas} subsecao={['Sem álcool', 'Vinhos', 'Drinks', 'Cervejas']} />
       <Footer />
     </div>
   )

@@ -91,12 +91,20 @@
             "subsecao": "Massas"
         },
         {
+            "nome": "Pizza",
+            "imagem": "/pizza.jpg",
+            "descricao": "Pizza artesanal com molho da casa. Calabresa, marguerita, portuguesa e peperoni",
+            "preco": 50,
+            "tempo": 15,
+            "subsecao": "Massas"
+        },
+        {
             "nome": "Filé mignon",
             "imagem": "/file.jpg",
             "descricao": "Filé mignon frito na manteiga com molho especial. Acompanha legumes frescos",
             "preco": 60,
             "tempo": 10,
-            "subsecao": "Carnes"
+            "subsecao": "Carnes vermelhas"
         },
         {
             "nome": "Costela defumada",
@@ -104,7 +112,15 @@
             "descricao": "Costela de Angus feita em nosso defumador especial, hidratada com molho de ervas finas",
             "preco": 55,
             "tempo": 30,
-            "subsecao": "Carnes"
+            "subsecao": "Carnes vermelhas"
+        },
+        {
+            "nome": "Picanha",
+            "imagem": "/picanha.jpg",
+            "descricao": "Nobre parte do boi, assada lentamente em nossa churrasqueira especial.",
+            "preco": 65,
+            "tempo": 25,
+            "subsecao": "Carnes vermelhas"
         },
         {
             "nome": "Salmão grelhado",
@@ -112,7 +128,71 @@
             "descricao": "Salmão do Alaska grelhado. Acompanha salada com pimentão e maionese de limão",
             "preco": 45,
             "tempo": 15,
-            "subsecao": "Carnes"
+            "subsecao": "Peixes e frutos do mar"
+        },
+        {
+            "nome": "Ostras",
+            "imagem": "/ostras.jpg",
+            "descricao": "Ostras ao bafo frescas do Ribeirão da Ilha, acompanhadas de limão",
+            "preco": 45,
+            "tempo": 15,
+            "subsecao": "Peixes e frutos do mar"
+        },
+        {
+            "nome": "Moqueca",
+            "imagem": "/moqueca.jpg",
+            "descricao": "Ensopado à base de peixe e frutos do mar, temperado com ervas e pimentas",
+            "preco": 55,
+            "tempo": 25,
+            "subsecao": "Peixes e frutos do mar"
+        },
+        {
+            "nome": "Pato",
+            "imagem": "/pato.jpg",
+            "descricao": "Pato ao molho de vinho acompanhado de batatas inglesas",
+            "preco": 45,
+            "tempo": 15,
+            "subsecao": "Aves"
+        },
+        {
+            "nome": "Sobrecoxa de frango",
+            "imagem": "/sobrecoxa.jpg",
+            "descricao": "Sobrecoxa assada no forno com manteiga temperada",
+            "preco": 45,
+            "tempo": 15,
+            "subsecao": "Aves"
+        },
+        {
+            "nome": "Frango a passarinho",
+            "imagem": "/frango.jpg",
+            "descricao": "O clássico frango a passarinho, frito em óleo fresco e com casca apimentada",
+            "preco": 35,
+            "tempo": 10,
+            "subsecao": "Aves"
+        },
+        {
+            "nome": "Risoto de carne",
+            "imagem": "/risotocarne.jpg",
+            "descricao": "Risoto de carne sem frescuras, bom pra quem está indeciso sobre o que pedir",
+            "preco": 45,
+            "tempo": 15,
+            "subsecao": "Risotos"
+        },
+        {
+            "nome": "Risoto de frango",
+            "imagem": "/risotofrango.jpg",
+            "descricao": "Risoto de frango sem frescuras, bom pra quem está indeciso sobre o que pedir",
+            "preco": 40,
+            "tempo": 15,
+            "subsecao": "Risotos"
+        },
+        {
+            "nome": "Risoto de camarão",
+            "imagem": "/risotocamarao.jpg",
+            "descricao": "Risoto de camarão graúdo com molho de limão siciliano, carro chefe da casa",
+            "preco": 55,
+            "tempo": 15,
+            "subsecao": "Risotos"
         }
     ],
     "sobremesas": [
@@ -158,35 +238,96 @@
             "imagem": "/agua.jpg",
             "descricao": "Água mineral, com ou sem gás",
             "preco": 6,
-            "tempo": 1
+            "tempo": 1,
+            "subsecao": "Sem álcool"
         },
         {
             "nome": "Refrigerante",
             "imagem": "/coca.jpg",
             "descricao": "Refrigerantes da marca Coca-cola",
             "preco": 8,
-            "tempo": 1
+            "tempo": 1,
+            "subsecao": "Sem álcool"
         },
         {
             "nome": "Suco",
             "imagem": "/suco.jpg",
             "descricao": "Sucos naturais feitos na hora. Verificar disponibilidade antes.",
             "preco": 10,
-            "tempo": 5
+            "tempo": 5,
+            "subsecao": "Sem álcool"
         },
         {
-            "nome": "Cerveja",
-            "imagem": "/cerveja.jpg",
-            "descricao": "Cervejas geladinhas. Heineken, Stella Artois, Budweiser e Corona",
+            "nome": "Budweiser",
+            "imagem": "/bud.jpg",
+            "descricao": "Cerveja puro malte da Ambev, perfeita para dias quentes",
+            "preco": 12,
+            "tempo": 3,
+            "subsecao": "Cervejas"
+        },
+        {
+            "nome": "Corona",
+            "imagem": "/corona.jpg",
+            "descricao": "Cerveja mexicana que cai muito bem com petiscos",
             "preco": 15,
-            "tempo": 3
+            "tempo": 3,
+            "subsecao": "Cervejas"
         },
         {
-            "nome": "Vinho",
-            "imagem": "/vinho.jpg",
-            "descricao": "Garrafas de vinhos da vinícola argentina Catena Zapata",
+            "nome": "Heineken",
+            "imagem": "/heineken.jpg",
+            "descricao": "Cerveja um pouco mais forte em homenagem ao piloto de corrida de F1",
+            "preco": 15,
+            "tempo": 3,
+            "subsecao": "Cervejas"
+        },
+        {
+            "nome": "Vinho tinto",
+            "imagem": "/tinto.jpg",
+            "descricao": "Vinho tinto da vinícola argentina Catena Zapata",
             "preco": 80,
-            "tempo": 5
+            "tempo": 5,
+            "subsecao": "Vinhos"
+        },
+        {
+            "nome": "Vinho branco",
+            "imagem": "/branco.jpg",
+            "descricao": "Vinho branco da vinícola argentina Catena Zapata",
+            "preco": 70,
+            "tempo": 5,
+            "subsecao": "Vinhos"
+        },
+        {
+            "nome": "Vinho rosé",
+            "imagem": "/rose.jpg",
+            "descricao": "Vinho rosé da vinícola argentina Catena Zapata",
+            "preco": 75,
+            "tempo": 5,
+            "subsecao": "Vinhos"
+        },
+        {
+            "nome": "Gin tônica",
+            "imagem": "/gin.jpg",
+            "descricao": "Famoso drink de gin com água tônica acompanhado de rodelas de limão",
+            "preco": 25,
+            "tempo": 5,
+            "subsecao": "Drinks"
+        },
+        {
+            "nome": "Caipirinha",
+            "imagem": "/caipirinha.jpg",
+            "descricao": "Autêntico drink brasileiro de cachaça com limão e açúcar",
+            "preco": 20,
+            "tempo": 5,
+            "subsecao": "Drinks"
+        },
+        {
+            "nome": "Cosmopolitan",
+            "imagem": "/cosmo.jpg",
+            "descricao": "Vinho rosé da vinícola argentina Catena Zapata",
+            "preco": 30,
+            "tempo": 5,
+            "subsecao": "Drinks"
         }
     ]
 }
