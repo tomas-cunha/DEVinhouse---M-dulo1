@@ -9,7 +9,7 @@ export const Navbar = () => {
                 <img src="/logo.png" alt="" className={styles.logo} />
                 <h1 className={styles.title}>DEVinRestaurant</h1>
             </div>
-            <nav><a href="#" className={styles.menu}>Cardápio</a></nav>
+            <nav className={styles.nav}><a href="#" className={styles.menu}>Cardápio</a></nav>
             <div className={styles.decor}></div>
         </header>
     )

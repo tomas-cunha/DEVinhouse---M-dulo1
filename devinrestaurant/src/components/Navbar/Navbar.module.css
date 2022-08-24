@@ -38,3 +38,28 @@
     background-color: white;
     border: 1px solid black;
 }
+
+@media (max-width: 600px) {
+    .header {
+        width: 100%;
+        padding-top: 20px;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .decor {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .title {
+        padding-top: 15px;
+    }
+
+    .nav {
+        margin-bottom: 15px;
+    }
+}

@@ -29,6 +29,7 @@
 }
 
 .cardBottom {
+    width: auto;
     font-size: 0.8rem;
     display: flex;
     justify-content: space-between;
@@ -43,4 +44,13 @@
     display: flex;
     gap: 10px;
     align-items: center;
+}
+
+
+@media (max-width: 600px) {
+    .cardBottom {
+        gap: 20px;
+    }
+
+
 }
