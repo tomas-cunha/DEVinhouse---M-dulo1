@@ -3,7 +3,7 @@ import PropType from 'prop-types';
 
 export const Card = ({ nome, imagem, descricao, preco, tempo }) => {
     return (
-        <div className={styles.card}>
+        <li className={styles.card}>
             <h3 className={styles.titulo}>{nome}</h3>
             <img src={imagem} alt={nome} className={styles.img} />
             <p className={styles.descricao}>{descricao}</p>
@@ -18,7 +18,7 @@ export const Card = ({ nome, imagem, descricao, preco, tempo }) => {
                 </div>
 
             </div>
-        </div>
+        </li>
     )
 }
 

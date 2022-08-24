@@ -10,11 +10,11 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Secao titulo='Entradas' array={produtos.entradas} />
-      <Secao titulo='Saladas' array={produtos.saladas} />
-      <Secao titulo='Pratos Principais' array={produtos.pratos} />
-      <Secao titulo='Sobremesas' array={produtos.sobremesas} />
-      <Secao titulo='Bebidas' array={produtos.bebidas} />
+      <Secao titulo='Entradas' itens={produtos.entradas} />
+      <Secao titulo='Saladas' itens={produtos.saladas} />
+      <Secao titulo='Pratos Principais' itens={produtos.pratos} subsecao={['Massas', 'Carnes']} />
+      <Secao titulo='Sobremesas' itens={produtos.sobremesas} />
+      <Secao titulo='Bebidas' itens={produtos.bebidas} />
       <Footer />
     </div>
   )

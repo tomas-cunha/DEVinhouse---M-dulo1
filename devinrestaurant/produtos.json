@@ -79,35 +79,40 @@
             "imagem": "/lasanha.jpg",
             "descricao": "Deliciosa lasanha à bolonhesa, feita conforme a tradicional receita italiana",
             "preco": 55,
-            "tempo": 30
+            "tempo": 30,
+            "subsecao": "Massas"
         },
         {
             "nome": "Spaghetti",
             "imagem": "/spaghetti.jpg",
             "descricao": "Spaghetti artesanal acompanhado do famoso molho de tomate DEV",
             "preco": 40,
-            "tempo": 15
+            "tempo": 15,
+            "subsecao": "Massas"
         },
         {
             "nome": "Filé mignon",
             "imagem": "/file.jpg",
             "descricao": "Filé mignon frito na manteiga com molho especial. Acompanha legumes frescos",
             "preco": 60,
-            "tempo": 10
+            "tempo": 10,
+            "subsecao": "Carnes"
         },
         {
             "nome": "Costela defumada",
             "imagem": "/costela.jpg",
             "descricao": "Costela de Angus feita em nosso defumador especial, hidratada com molho de ervas finas",
             "preco": 55,
-            "tempo": 30
+            "tempo": 30,
+            "subsecao": "Carnes"
         },
         {
             "nome": "Salmão grelhado",
             "imagem": "/salmao.jpg",
             "descricao": "Salmão do Alaska grelhado. Acompanha salada com pimentão e maionese de limão",
             "preco": 45,
-            "tempo": 15
+            "tempo": 15,
+            "subsecao": "Carnes"
         }
     ],
     "sobremesas": [
