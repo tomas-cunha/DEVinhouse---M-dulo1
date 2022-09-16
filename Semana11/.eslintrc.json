@@ -22,8 +22,8 @@
         "react", "jsx-a11y"
     ],
     "rules": {
-        "prefer-const": "warn",
-        "no-unused-vars": "off"
+        "prefer-const": "warn"
+        
     },
     "settings": {
         "react": {
