@@ -1,6 +1,7 @@
 import { useCustomTheme } from "../../contexts";
-import { Button, Container, Title, Wrapper } from "./Navbar.styled";
+import { Container, Title, Wrapper } from "./Navbar.styled";
 import logo from "../../assets/react.svg";
+import { Button } from "../Button";
 
 export const Navbar = () => {
   const { handleTheme } = useCustomTheme();
