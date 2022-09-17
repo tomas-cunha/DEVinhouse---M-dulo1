@@ -1,28 +1,29 @@
 import { CustomThemeContext } from "./CustomThemeContext";
 import PropTypes from "prop-types";
 import { useState, useEffect } from "react";
-import { getTheme, setTheme } from "../../utils";
+import { getThemeLS, setThemeLS } from "../../utils";
 import { themeDark, themeLight } from "../../themes";
 
 export const CustomThemeProvider = ({ children }) => {
-  const [isDark, setDark] = useState(true);
+  const [theme, setTheme] = useState("dark");
 
   useEffect(() => {
-    setDark(getTheme());
+    const customTheme = getThemeLS();
+    if (customTheme) setTheme(customTheme);
   }, []);
 
   const handleTheme = () => {
-    setDark((prev) => {
-      const newValue = !prev;
-      setTheme(newValue);
+    setTheme((prev) => {
+      const newValue = prev === "dark" ? "light" : "dark";
+      setThemeLS(newValue);
       return newValue;
     });
   };
 
+  const customTheme = theme === "dark" ? themeDark : themeLight;
+
   return (
-    <CustomThemeContext.Provider
-      value={{ theme: isDark ? themeDark : themeLight, handleTheme }}
-    >
+    <CustomThemeContext.Provider value={{ theme: customTheme, handleTheme }}>
       {children}
     </CustomThemeContext.Provider>
   );
