@@ -1,20 +1,18 @@
 import { ThemeProvider } from "styled-components";
-import Proptypes from "prop-types";
-import { useCustomTheme } from "../../contexts";
-import { GlobalStyle } from "../../themes";
-import { Navbar } from "../../components";
 
-export const AppLayout = ({ children }) => {
+import { PerfilProvider, useCustomTheme } from "../../contexts";
+import { GlobalStyle } from "../../themes";
+import { Navbar, Profile } from "../../components";
+
+export const AppLayout = () => {
   const { theme } = useCustomTheme();
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <Navbar />
-      {children}
+      <PerfilProvider>
+        <Profile />
+      </PerfilProvider>
     </ThemeProvider>
   );
-};
-
-AppLayout.propTypes = {
-  children: Proptypes.node,
 };

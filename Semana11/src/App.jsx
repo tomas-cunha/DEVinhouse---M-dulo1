@@ -4,7 +4,7 @@ import { AppLayout } from "./layouts";
 function App() {
   return (
     <CustomThemeProvider>
-      <AppLayout></AppLayout>
+      <AppLayout />
     </CustomThemeProvider>
   );
 }
